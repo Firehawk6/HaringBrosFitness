@@ -38,9 +38,9 @@ nav a:hover {
 /* Section Styling */
 section {
     padding: 2rem;
-    margin: 1rem auto;
+    margin: 2rem auto; /* Centered sections with more spacing */
     max-width: 900px;
-    background: #1e1e1e;
+    background: #242424; /* Darker section background */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -63,12 +63,14 @@ p {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    align-items: center; /* Center services vertically */
+    min-height: 50vh; /* Ensure services section takes up more vertical space */
     text-align: center;
 }
 
 .service-card {
     flex: 1 1 calc(33% - 2rem);
-    background: #242424;
+    background: #2e2e2e; /* Darker card background */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
