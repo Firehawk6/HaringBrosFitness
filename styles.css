@@ -5,7 +5,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #fff;
-    background-color: #121212;
+    background-color: #1a1a1a; /* Slightly lighter than header */
 }
 
 header {
