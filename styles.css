@@ -38,7 +38,7 @@ nav a:hover {
 /* Section Styling */
 section {
     padding: 2rem;
-    margin: 2rem auto; /* Centered sections with more spacing */
+    margin: 2rem auto;
     max-width: 900px;
     background: #242424; /* Darker section background */
     border-radius: 10px;
@@ -60,16 +60,17 @@ p {
 /* Services Section */
 .services {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack services vertically */
     gap: 1rem;
     justify-content: center;
-    align-items: center; /* Center services vertically */
+    align-items: center; /* Center services horizontally */
     min-height: 50vh; /* Ensure services section takes up more vertical space */
     text-align: center;
 }
 
 .service-card {
-    flex: 1 1 calc(33% - 2rem);
+    width: 80%; /* Make cards closer together */
+    max-width: 400px;
     background: #2e2e2e; /* Darker card background */
     padding: 1rem;
     border-radius: 10px;
@@ -94,11 +95,11 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .services {
-        flex-direction: column;
+        gap: 1rem; /* Reduce gap between services */
     }
 
     .service-card {
-        flex: 1 1 100%;
+        width: 90%;
     }
 
     nav a {
